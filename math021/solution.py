@@ -19,11 +19,9 @@ def solver(p: int = None, q: int = None):
     ans = 0
     for num in range(start, end + 1):
         sum_of_factors = factors_sum(num)
-        if sum_of_factors == num:
-            continue
-        num_fact_pair[num] = sum_of_factors
         if sum_of_factors in num_fact_pair and num_fact_pair[sum_of_factors] == num:
             ans = ans + num + sum_of_factors
+        num_fact_pair[num] = sum_of_factors
     return ans
 
 
