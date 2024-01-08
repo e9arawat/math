@@ -8,7 +8,7 @@ def score():
     for x in dir_list:
         if "math" not in x:
             continue
-        print(dir)
+        print(x)
         next_dir = x + "/solution.py"
         os.system("python3 " + next_dir)
 
