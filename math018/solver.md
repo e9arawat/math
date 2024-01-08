@@ -1,0 +1,1 @@
+The solver function converts the string into a grid.
