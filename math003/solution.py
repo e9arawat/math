@@ -1,7 +1,6 @@
 """Day-3"""
 import math
 
-
 def is_prime(num):
     """function to find if number is prime or not"""
     if num <= 1:
@@ -37,9 +36,6 @@ def answer():
     return solver(600851475143)
 
 
-def main():
+if __name__ == "__main__":
     print(answer())
     print(solver(23445656))
-
-
-main()
