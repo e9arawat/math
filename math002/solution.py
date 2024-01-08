@@ -1,5 +1,6 @@
 """Day-2"""
 
+
 def solver(start, end, even=False, odd=False):
     """Base condition"""
     if start > end:
@@ -35,6 +36,7 @@ def solver(start, end, even=False, odd=False):
 
     return ans
 
+
 def answer():
     """answer"""
     a = 0
@@ -48,9 +50,6 @@ def answer():
         c += b
         b = a
     return ans
-
-
-
 
 
 if __name__ == "__main__":

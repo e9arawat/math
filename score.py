@@ -1,16 +1,17 @@
+"""script to runn all math problems"""
 import os
-import subprocess
+
+
 def score():
-    current_dir = os.getcwd()
-    dir_list = os.listdir(current_dir)
-    dir_list = sorted(dir_list)
-    for dir in dir_list:  
-        if 'math' not in dir:
+    """function"""
+    dir_list = sorted(os.listdir(os.getcwd()))
+    for x in dir_list:
+        if "math" not in x:
             continue
         print(dir)
-        next_dir = dir + "/solution.py"
-        os.system('python3 '+next_dir)
-        
-    
+        next_dir = x + "/solution.py"
+        os.system("python3 " + next_dir)
+
+
 if __name__ == "__main__":
-    score() 
+    score()
