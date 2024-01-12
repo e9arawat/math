@@ -1,46 +1,53 @@
-# Problem No. 24
+# Problem No. 25
 
-## Lexicographic Permutations
+## 1000-digit Fibonacci
 
-A permutation is an ordered arrangement of objects. For example, 3124 is one possible permutation of the digits 1, 2, 3 and 4. If all of the permutations are listed numerically or alphabetically, we call it lexicographic order. The lexicographic permutations of 0, 1 and 2 are:
+The Fibonacci sequence is defined by the recurrence relation:
 
-```
-012
-021
-102
-120
-201
-210
-```
+$F_n = F_{n - 1} + F_{n - 2}$, where $F_1 = 1$ and $F_2 = 1$.
+
+Hence the first $12$ terms will be:
+
+$$\begin{align}
+F_1 &amp;= 1\\
+F_2 &amp;= 1\\
+F_3 &amp;= 2\\
+F_4 &amp;= 3\\
+F_5 &amp;= 5\\
+F_6 &amp;= 8\\
+F_7 &amp;= 13\\
+F_8 &amp;= 21\\
+F_9 &amp;= 34\\
+F_{10} &amp;= 55\\
+F_{11} &amp;= 89\\
+F_{12} &amp;= 144
+\end{align}$$
+
+The $12$th term, $F_{12}$, is the first term to contain three digits.
 
 ## Part A
 
-What is the millionth lexicographic permutation of the digits 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9?
+What is the index of the first term in the Fibonacci sequence to contain $1000$ digits?
 
 Update the function `answer()` in `solution.py` with your solution.
 
 ## Part B
 
-Generalize the solution in Part A to identify the nth lexicographic permutation of a list of numbers and letters.
-
-The list of numbers and letters may be defined as
-
-```python
-"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-```
+Generalize the solution in Part A to identify the first term in the Fibonacci sequence to contain $n$ digits. 
 
 Update the function `solver()` in `solution.py` with your generalized solution.
 
 ## Instructions
 
-Create a new directory in your math problem repo (math) called `math024`
+Create a new directory in your math problem repo (math) called `math025`
 
-Copy README.md and solution.py into `math024`
+Copy README.md and solution.py into `math025`
 
 Share your solution by updating `answer()` and `solver()` in solution.py.
 
 ```
-math024
+math025
 ├── README.md
 └── solution.py
 ``` 
+
