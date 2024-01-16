@@ -14,7 +14,7 @@ def answer():
         return True
 
     a, b, max_length = 0, 0, 0
-    for i in range(-1000, 1000):
+    for i in range(-999, 1000):
         for j in range(-1000, 1001):
             count, n = 0, 0
             while True:
