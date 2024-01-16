@@ -27,7 +27,7 @@ def solver(n, input_list: list = None):
         return max_length
     count = 0
     for x in reciprocal_list:
-        if input_list[0] in x:
+        if str(input_list[0]) in x:
             count += 1
     return count
 
@@ -39,4 +39,4 @@ def answer():
 
 if __name__ == "__main__":
     print(answer())
-    print(solver(1000, ["142857"]))
+    print(solver(1000, [142857]))
