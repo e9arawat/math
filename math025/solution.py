@@ -1,4 +1,6 @@
 """Day-25"""
+
+
 def add_terms(num1: str, num2: str):
     """function to add two numbers"""
     index, result, remainder = 1, "", 0

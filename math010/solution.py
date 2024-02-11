@@ -10,23 +10,18 @@ def solver(p: int, q: int = None):
         return None
     start_sum, end_sum = 0, 0
     # finding for start
-    prime_list_start = start * [1]
+    prime_list_start = [1] * start
     for i in range(2, int(start**0.5) + 1):
         if prime_list_start[i] == 1:
-            for j in range(i, start):
-                if i * j < start:
-                    prime_list_start[i * j] = 0
-                else:
-                    break
+            for j in range(i * i, start + 1, i):
+                prime_list_start[j] = 0
+
     # finding for end
-    prime_list_end = end * [1]
+    prime_list_end = [1] * (end + 1)
     for i in range(2, int(end**0.5) + 1):
         if prime_list_end[i] == 1:
-            for j in range(i, end):
-                if i * j < end:
-                    prime_list_end[i * j] = 0
-                else:
-                    break
+            for j in range(i * i, end + 1, i):
+                prime_list_end[j] = 0
 
     for i, val in enumerate(prime_list_start):
         if val == 1:

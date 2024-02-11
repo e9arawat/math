@@ -20,7 +20,7 @@ def solver(start, end, even=False, odd=False):
         c += b
         b = a
     # Checking for the start and end point
-    while c >= start and c <= end:
+    while start <= c <= end:
         if c % 2 == 0:
             even_sum += c
         else:

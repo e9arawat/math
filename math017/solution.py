@@ -1,4 +1,5 @@
 """python program to find number of letters that would be used to write """
+
 words_dict = {
     100000000: "billion",
     1000000: "million",

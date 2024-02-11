@@ -25,7 +25,7 @@ def solver(input_string: str = None):
 
 def answer():
     """calling solver function"""
-    input_string = """75
+    answer_input = """75
 95 64
 17 47 82
 18 35 87 10
@@ -41,13 +41,16 @@ def answer():
 63 66 04 68 89 53 67 30 73 16 69 87 40 31
 04 62 98 27 23 09 70 98 73 93 38 53 60 04 23"""
 
-    return solver(input_string)
+    return solver(answer_input)
 
 
 if __name__ == "__main__":
     print(answer())
-    input_string = """3
+    print(
+        solver(
+            """3
 7 4
 2 4 6
 8 5 9 3"""
-    print(solver(input_string))
+        )
+    )

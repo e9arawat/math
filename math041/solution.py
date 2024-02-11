@@ -1,5 +1,5 @@
 """Problem 41"""
-#7652413
+
 
 def is_prime(num):
     """return if the number is prime or not"""
@@ -10,20 +10,34 @@ def is_prime(num):
             return False
     return True
 
-def is_pandigital(num):
-    """return if numbers is pan digital or not"""
-    num = sorted(str(num))
-    for index, x in enumerate(num):
-        if x in num[index+1:] or int(x) > len(num):
-            return False
-    return True
+
+def all_combinations(combinations, digits, remaining_digits):
+    """function to find all the combinations of a given number"""
+    if len(remaining_digits) == 0:
+        if is_prime(int(digits)):
+            combinations.append(int(digits))
+        return
+    for index, x in enumerate(remaining_digits):
+        if digits == "" and x == "0":
+            continue
+        all_combinations(
+            combinations,
+            digits + remaining_digits[index],
+            remaining_digits[:index] + remaining_digits[index + 1 :],
+        )
+
 
 def solver():
     """return the largest pandigital prime"""
-    for i in reversed(range(2, 10000000)):
-        if '0' not in str(i) and is_pandigital(i) and is_prime(i):
-            return i
-        
+    number = "123456789"
+    for _ in range(8):
+        combinations = []
+        all_combinations(combinations, "", number)
+        if combinations:
+            return max(combinations)
+        number = number[:-1]
+    return 0
+
 
 if __name__ == "__main__":
     print(solver())

@@ -1,4 +1,5 @@
 """Counting sundays"""
+
 from datetime import date
 
 

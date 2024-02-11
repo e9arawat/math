@@ -1,18 +1,40 @@
 """Problem 50"""
 
-def solver():
-    """return the Consecutive Prime Sum"""
-    all_primes = [x for x in range(2,1000) if all(x%i!=0 for i in range(2,int(x**0.5)+1))]
 
-    max_sum = 0
-    temp = 0
-    for i in range(len(all_primes)):
-        temp = 0
-        for x in all_primes[i+1:]:
-            temp += x
-            if temp in all_primes:
-                max_sum = max(max_sum, temp)
-    return max_sum
+def is_prime(num):
+    """return if the number is prime or not"""
+    if num < 2:
+        return False
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+
+def solver(n):
+    """return the Consecutive Prime Sum"""
+    all_primes = []
+    num = 2
+    while sum(all_primes) < n:
+        if all(num % i != 0 for i in range(2, int(num**0.5) + 1)):
+            all_primes.append(num)
+        num += 1
+    max_primes = []
+    l = j = len(all_primes)
+    while j != 0:
+        i = 0
+        while i + j < l + 1:
+            current_primes = all_primes[i : i + j]
+            if (
+                sum(current_primes) <= n
+                and is_prime(sum(current_primes))
+                and len(current_primes) > len(max_primes)
+            ):
+                max_primes = current_primes
+            i = i + 1
+        j = j - 1
+    return sum(max_primes)
+
 
 if __name__ == "__main__":
-    print(solver())
+    print(solver(1000000))

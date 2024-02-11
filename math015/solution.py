@@ -1,6 +1,5 @@
 """function to find total unique paths"""
 
-
 from collections import deque
 
 

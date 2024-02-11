@@ -24,8 +24,13 @@ def solver():
     """return sum of Truncatable Primes"""
     ans = count = 0
     num = 23
-    while count != 11:
-        if is_prime(num) and is_truncatable(str(num), 1):
+    all_primes = [
+        x
+        for x in range(11, 800000)
+        if all(x % i != 0 for i in range(2, int(x**0.5) + 1))
+    ]
+    for num in all_primes:
+        if is_truncatable(str(num), 1):
             ans += num
             count += 1
         num += 1

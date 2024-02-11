@@ -1,3 +1,6 @@
+"""Problem 16"""
+
+
 def solver(n: int = 1000):
     """function to find sum of all the digits of 2^n"""
     if n == 0:

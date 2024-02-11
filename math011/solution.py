@@ -108,7 +108,7 @@ def answer():
 
 if __name__ == "__main__":
     print(answer())
-    input_grid = [
+    input_grid2 = [
         [5, 5, 4, 3, 2],
         [9, 9, 7, 6, 1],
         [1, 2, 9, 11, 11],
@@ -116,4 +116,4 @@ if __name__ == "__main__":
         [0, 1, 3, 6, 10],
     ]
 
-    print(solver(input_grid, 5))
+    print(solver(input_grid2, 5))

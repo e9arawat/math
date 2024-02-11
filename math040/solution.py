@@ -4,19 +4,14 @@
 def solver():
     """return Champernowne's Constant"""
     temp = "0"
-    num = 1
-    while len(temp) < 1000001:
+    for num in range(1, 185186):
         temp += str(num)
-        num += 1
-    return (
-        int(temp[1])
-        * int(temp[10])
-        * int(temp[100])
-        * int(temp[1000])
-        * int(temp[10000])
-        * int(temp[100000])
-        * int(temp[1000000])
-    )
+    index = "1"
+    ans = 1
+    for _ in range(7):
+        ans *= int(temp[int(index)])
+        index += "0"
+    return ans
 
 
 if __name__ == "__main__":

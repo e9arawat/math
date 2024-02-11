@@ -1,5 +1,7 @@
 """Day-3"""
+
 import math
+
 
 def is_prime(num):
     """function to find if number is prime or not"""

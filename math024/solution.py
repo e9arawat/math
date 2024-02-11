@@ -1,10 +1,11 @@
 """Day-24"""
+
 import math
 
 
 def factorial(num):
     """function to find factorial of a number"""
-    return math.prod(list(range(2,num+1)))
+    return math.prod(list(range(2, num + 1)))
 
 
 def solver(input_string: str, term: int):
