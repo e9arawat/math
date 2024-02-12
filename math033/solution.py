@@ -53,14 +53,14 @@ def check_trival(i, j):
 
 def answer():
     """function to find product of all trival"""
-    ans = 1
+    ans = 1 / 2
     for i in range(11, 100):
         for j in range(i + 1, 100):
             if i % 10 == 0 or j % 10 == 0 or i / j >= 1:
                 continue
             ans *= check_trival(i, j)
 
-    return ans
+    return int(ans)
 
 
 if __name__ == "__main__":
