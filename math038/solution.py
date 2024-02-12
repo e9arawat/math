@@ -1,7 +1,7 @@
 """Problem 38"""
 
 
-def solver():
+def answer():
     """return the largest Pandigital Multiples"""
     ans = 0
     test_list = [str(x) for x in range(1, 10)]
@@ -17,4 +17,4 @@ def solver():
 
 
 if __name__ == "__main__":
-    print(solver())
+    print(answer())

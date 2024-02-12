@@ -27,7 +27,7 @@ def all_combinations(combinations, digits, remaining_digits):
         )
 
 
-def solver():
+def answer():
     """return the largest pandigital prime"""
     number = "123456789"
     for _ in range(8):
@@ -40,4 +40,4 @@ def solver():
 
 
 if __name__ == "__main__":
-    print(solver())
+    print(answer())

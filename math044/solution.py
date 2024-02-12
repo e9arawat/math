@@ -11,7 +11,7 @@ def is_pentagon(num):
     return False
 
 
-def solver():
+def answer():
     """return the pair"""
     pentagon = [(n * (3 * n - 1)) // 2 for n in range(1000, 3000)]
     for index, x in enumerate(pentagon):
@@ -23,4 +23,4 @@ def solver():
 
 
 if __name__ == "__main__":
-    print(solver())
+    print(answer())

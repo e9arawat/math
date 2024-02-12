@@ -8,7 +8,7 @@ def is_property(p, i, j):
     return False
 
 
-def solver():
+def answer():
     """return the maximum number for which the number of solutions maximised"""
     ans = max_solution = 0
     for p in range(12, 1001):
@@ -24,4 +24,4 @@ def solver():
 
 
 if __name__ == "__main__":
-    print(solver())
+    print(answer())

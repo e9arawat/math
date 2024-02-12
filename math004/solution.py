@@ -30,7 +30,7 @@ def solver(n, p=None, q=None):
 
 def answer():
     """calling solver function"""
-    return solver(2)
+    return solver(3)
 
 
 if __name__ == "__main__":

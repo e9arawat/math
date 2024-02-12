@@ -19,7 +19,7 @@ def find_sum_factorial(num):
     return ans == num
 
 
-def solver():
+def answer():
     """function to find Digit Factorials"""
     ans = 0
     for i in range(3, 1000000):
@@ -28,4 +28,4 @@ def solver():
 
 
 if __name__ == "__main__":
-    print(solver())
+    print(answer())

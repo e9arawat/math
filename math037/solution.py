@@ -20,7 +20,7 @@ def is_prime(num):
     return True
 
 
-def solver():
+def answer():
     """return sum of Truncatable Primes"""
     ans = count = 0
     num = 23
@@ -38,4 +38,4 @@ def solver():
 
 
 if __name__ == "__main__":
-    print(solver())
+    print(answer())

@@ -19,7 +19,7 @@ def find_power(num):
     return int(ans)
 
 
-def solver():
+def answer():
     """Self Powers"""
     mod = 10**10
     all_nums = [find_power(i) for i in range(1, 1001)]
@@ -35,4 +35,4 @@ def solver():
 
 
 if __name__ == "__main__":
-    print(solver())
+    print(answer())

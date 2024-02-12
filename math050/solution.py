@@ -11,7 +11,7 @@ def is_prime(num):
     return True
 
 
-def solver(n):
+def answer(n):
     """return the Consecutive Prime Sum"""
     all_primes = []
     num = 2
@@ -37,4 +37,4 @@ def solver(n):
 
 
 if __name__ == "__main__":
-    print(solver(1000000))
+    print(answer(1000000))

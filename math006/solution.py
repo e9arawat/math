@@ -14,7 +14,7 @@ def solver(start, end):
 
 def answer():
     """calling solver function"""
-    return solver(1, 10)
+    return solver(1, 100)
 
 
 if __name__ == "__main__":

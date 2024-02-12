@@ -1,7 +1,7 @@
 """Problem 40"""
 
 
-def solver():
+def answer():
     """return Champernowne's Constant"""
     temp = "0"
     for num in range(1, 185186):
@@ -15,4 +15,4 @@ def solver():
 
 
 if __name__ == "__main__":
-    print(solver())
+    print(answer())

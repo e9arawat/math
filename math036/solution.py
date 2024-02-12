@@ -15,10 +15,10 @@ def is_palindrome(num):
     return num == num[::-1]
 
 
-def solver(n):
+def answer():
     """return the sum of Double-base Palindromes"""
     ans = 0
-    for i in range(1, n):
+    for i in range(1, 1000000):
         if is_palindrome(str(i)) and is_palindrome(find_binary(i)):
             ans += i
 
@@ -26,4 +26,4 @@ def solver(n):
 
 
 if __name__ == "__main__":
-    print(solver(1000000))
+    print(answer())

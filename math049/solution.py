@@ -1,7 +1,7 @@
 """Problem 49"""
 
 
-def solver():
+def answer():
     """Prime Permutations"""
 
     def all_prime_combinations(combinations, digits, remaining_digits):
@@ -42,4 +42,4 @@ def solver():
 
 
 if __name__ == "__main__":
-    print(solver())
+    print(answer())

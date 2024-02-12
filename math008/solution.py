@@ -40,7 +40,7 @@ def answer():
 05886116467109405077541002256983155200055935729725
 71636269561882670428252483600823257530420752963450"""
     temp = temp.replace("\n", "")
-    return solver(temp, 69)
+    return solver(temp, 13)
 
 
 if __name__ == "__main__":

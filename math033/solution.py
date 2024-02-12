@@ -51,7 +51,7 @@ def check_trival(i, j):
     return 1
 
 
-def solver():
+def answer():
     """function to find product of all trival"""
     ans = 1
     for i in range(11, 100):
@@ -64,4 +64,4 @@ def solver():
 
 
 if __name__ == "__main__":
-    print(solver())
+    print(answer())

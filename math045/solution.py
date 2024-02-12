@@ -3,7 +3,7 @@
 import math
 
 
-def solver():
+def answer():
     """return Triangular, Pentagonal, and Hexagonal"""
     hexagonal = [(n * (2 * n - 1)) for n in range(144, 100000)]
     for x in hexagonal:
@@ -14,4 +14,4 @@ def solver():
 
 
 if __name__ == "__main__":
-    print(solver())
+    print(answer())

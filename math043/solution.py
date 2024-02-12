@@ -27,7 +27,7 @@ def all_combinations(combinations, digits, remaining_digits):
         )
 
 
-def solver():
+def answer():
     """return sum of all Sub-string Divisibility numbers"""
     ans = 0
     combinations = []
@@ -41,4 +41,4 @@ def solver():
 
 
 if __name__ == "__main__":
-    print(solver())
+    print(answer())

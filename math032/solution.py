@@ -1,7 +1,7 @@
 """Day-32"""
 
 
-def solver():
+def answer():
     """sum of all products whose multiplicand/multiplier/product"""
     digits = "123456789"
     result = set()
@@ -25,4 +25,4 @@ def solver():
 
 
 if __name__ == "__main__":
-    print(solver())
+    print(answer())

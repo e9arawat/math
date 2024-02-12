@@ -23,7 +23,7 @@ def find_factors(num):
     return factors
 
 
-def solver():
+def answer():
     """Distinct Primes Factors"""
     num_factors_dict = {}
     for num in range(100000, 150000):
@@ -42,4 +42,4 @@ def solver():
 
 
 if __name__ == "__main__":
-    print(solver())
+    print(answer())

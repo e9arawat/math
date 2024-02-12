@@ -12,7 +12,7 @@ def is_property(num, smaller_primes):
     return False
 
 
-def solver():
+def answer():
     """Goldbach's Other Conjecture"""
     all_primes = [
         x
@@ -29,4 +29,4 @@ def solver():
 
 
 if __name__ == "__main__":
-    print(solver())
+    print(answer())

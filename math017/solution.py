@@ -40,10 +40,10 @@ def find_length(num):
     if num == 0:
         return 0
     if num in words_dict:
+        if num % 100 == 0:
+            return len(words_dict[num]) + 3
         return len(words_dict[num])
     ans = 0
-    if len(str(num)) == 3 and num % 100 != 0:
-        ans += 3
     for key, value in words_dict.items():
         if num >= key:
             if num >= 100:
@@ -60,6 +60,8 @@ def solver(n: int = 1, m: int = 1000):
         start, end = n, m
     ans = 0
     for i in range(start, end + 1):
+        if i > 100 and i % 100 != 0:
+            ans += 3
         ans += find_length(i)
     return ans
 
