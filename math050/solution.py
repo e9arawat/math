@@ -11,11 +11,11 @@ def is_prime(num):
     return True
 
 
-def answer(n):
+def answer():
     """return the Consecutive Prime Sum"""
     all_primes = []
     num = 2
-    while sum(all_primes) < n:
+    while sum(all_primes) < 1000000:
         if all(num % i != 0 for i in range(2, int(num**0.5) + 1)):
             all_primes.append(num)
         num += 1
@@ -26,7 +26,7 @@ def answer(n):
         while i + j < l + 1:
             current_primes = all_primes[i : i + j]
             if (
-                sum(current_primes) <= n
+                sum(current_primes) <= 1000000
                 and is_prime(sum(current_primes))
                 and len(current_primes) > len(max_primes)
             ):
@@ -37,4 +37,4 @@ def answer(n):
 
 
 if __name__ == "__main__":
-    print(answer(1000000))
+    print(answer())

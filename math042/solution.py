@@ -12,9 +12,9 @@ def is_triangle(num):
     return False
 
 
-def answer(filename):
+def answer():
     """return the total triangular words"""
-    with open(filename, "r", encoding="UTF-8") as f:
+    with open("words.txt", "r", encoding="UTF-8") as f:
         data = f.read()
     ans = 0
     data = data.replace('"', " ").replace(",", " ").split()
@@ -28,4 +28,4 @@ def answer(filename):
 
 
 if __name__ == "__main__":
-    print(answer("words.txt"))
+    print(answer())
