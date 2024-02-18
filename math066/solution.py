@@ -13,22 +13,23 @@ def answer():
     """ 
     Diophantine Equation
     """
-    max_x = max_x_d = 0
-    for D in range(8):
-        if is_square(D):
-            continue
-        y = 1
-        while True:
-            x = find_x(D, y)
-            if x != int(x):
-                continue
-            print(x, y)
-            if x**2 - (D * (y**y)) == 1 and max_x < x:
-                max_x = x
-                max_x_d = D
-                break
-            y += 1
-    return max_x_d
-
+    # max_x = max_x_d = 0
+    # for D in range(8):
+    #     if is_square(D):
+    #         continue
+    #     y = 1
+    #     while True:
+    #         x = find_x(D, y)
+    #         if x != int(x):
+    #             continue
+    #         print(x, y)
+    #         if x**2 - (D * (y**y)) == 1 and max_x < x:
+    #             max_x = x
+    #             max_x_d = D
+    #             break
+    #         y += 1
+    # return max_x_d
+    print("IN-COMPLETE")
+        
 if __name__ == "__main__":
     print(answer())

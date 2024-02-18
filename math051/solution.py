@@ -1,13 +1,13 @@
 """ 
-Magic 5-gon Ring
+Prime Digit Replacements
 """
 
 def answer():
     """ 
-    Magic 5-gon Ring
+    Prime Digit Replacements
     """
     
     print("IN-COMPLETE")
-        
+
 if __name__ == "__main__":
     print(answer())
