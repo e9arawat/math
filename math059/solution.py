@@ -15,7 +15,6 @@ def answer():
 
     for p in range(password_length):
         for ch in range(ord("a"), ord("z") + 1):
-
             dec = []
             for i in range(p, len(data), password_length):
                 dec.append(chr(data[i] ^ ch))
